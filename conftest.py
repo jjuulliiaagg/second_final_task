@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 def browser():
     chrome_options = Options()
     chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--headless')
+    # chrome_options.add_argument('--headless')
     chrome_options.add_argument('--disable-gpu')
     browser = webdriver.Chrome('/usr/local/bin/chromedriver', options=chrome_options)
     # browser.maximize_window()
